@@ -24,13 +24,13 @@ def connectDB(DBIP,DBPort,DBUID,DBPwd,BaseDB,DBID):
 
 
 def fetchDBData(Prj_in,Module,qry,clmn):
-   Project =  {'MSEDCL':{'IP':'10.255.26.14',
-                        'Port':'6412',
-                        'uid':'praveen',
-                        'pwd':'$2024praveen',
-                        'HES':'hes_mppkvvcl_live',
-                        'WFM':'masterdata',
-                        'MDM':'mdm_mppkvvcl_live'}
+   Project =  {'MSEDCL':{'IP':'',
+                        'Port':'',
+                        'uid':'DB usrname',
+                        'pwd':'passcode',
+                        'HES':'DBNAME',
+                        'WFM':'DBNAME',
+                        'MDM': 'DBNAME'}
                }
 
    DBIP = Project[Prj_in]['IP']
@@ -58,18 +58,18 @@ def fetchDBData(Prj_in,Module,qry,clmn):
 
 
 def fetchDBData_inparts(Prj_in,Module,qry,clmn):
-   Project = {'TS1506':{'IP':'10.48.166.203',
-                        'Port':'6412',
-                        'uid':'praveen',
-                        'pwd':'bcits@123',
-                        'HES':'hes_mppkvvcl_live',
-                        'MDM':'mdm_mppkvvcl_live'},
+   Project = {'TS1506':{'IP':'',
+                        'Port':'',
+                        'uid':'DB username',
+                        'pwd':'passcode',
+                        'HES':'DBNAME',
+                        'MDM':'DBNAME'},
             'TS1507':{'IP':'""',
                         'Port':'',
                         'uid':'',
                         'pwd':'',
-                        'HES':'HES2507',
-                        'MDM':'MDM1507'}}
+                        'HES':'DBNAME',
+                        'MDM':'DBNAME'}}
 
    DBIP = Project[Prj_in]['IP']
    DBPort = Project[Prj_in]['Port']
